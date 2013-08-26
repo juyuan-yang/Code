@@ -23,8 +23,27 @@ package SumRoottoLeafNumbers;
 
 import Helper.TreeNode;
 
+// what a shame, AC on 2nd try!!!
 public class Solution {
+	int res;
 	public int sumNumbers(TreeNode root) {
-		return 0;
+		if(root == null) return 0;
+		res = 0;
+		tryEachNode(root, 0);
+		return res;
+	}
+	
+	public void tryEachNode(TreeNode node, int num) {
+		num = num * 10 + node.val;
+		if(node.left == null && node.right == null) {
+			res += num;
+		} else {
+			if(node.left != null) {
+				tryEachNode(node.left, num);
+			}
+			if(node.right != null) {
+				tryEachNode(node.right, num);
+			}
+		}
 	}
 }
