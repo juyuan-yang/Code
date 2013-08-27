@@ -26,6 +26,8 @@ package SurroundedRegions;
 // stupid on 1st try, always forget something in conditions :(
 // Runtime error on 2nd try, I guess it's because of too long recursion
 public class Solution {
+	int[] directX = {-1, 0, 1, 0};
+	int[] directY = {0, -1, 0, 1};
 	public void solve(char[][] board) {
 		if(board == null || board.length == 0) return;
 		int rows = board.length;
@@ -46,11 +48,28 @@ public class Solution {
 		}
 	}
 	
+	// 3rd try failed, because of array index out of bound... need to be very careful when assigning board
+	// some cell might be added to the queue twice...
+	// 4th try may meet TLE sometimes...
 	public void checkEachChar(char[][] board, int i, int j, int rows, int cols) {
+		int[] Xs = new int[rows * cols];
+		int[] Ys = new int[rows * cols];
+		int pos = 0, total = 0;
+		Xs[total] = i;
+		Ys[total++] = j;
 		board[i][j] = 'A';
-		if(i > 0 && board[i-1][j] == 'O') checkEachChar(board, i-1, j, rows, cols);
-		if(i < cols-1 && board[i+1][j] == 'O') checkEachChar(board, i+1, j, rows, cols);
-		if(j > 0 && board[i][j-1] == 'O') checkEachChar(board, i, j-1, rows, cols);
-		if(j < rows-1 && board[i][j+1] == 'O') checkEachChar(board, i, j+1, rows, cols);
+		
+		while(pos < total) {
+			for(int k = 0; k < 4; k++) {
+				if(Xs[pos] + directX[k] > 0 && Xs[pos] + directX[k] < rows - 1 &&
+						Ys[pos] + directY[k] > 0 && Ys[pos] + directY[k] < cols - 1
+						&& board[Xs[pos] + directX[k]][Ys[pos] + directY[k]] == 'O') {
+					Xs[total] = Xs[pos] + directX[k];
+					Ys[total++] = Ys[pos] + directY[k];
+					board[Xs[pos] + directX[k]][Ys[pos] + directY[k]] = 'A';
+				}
+			}
+			pos++;
+		}
 	}
 }
