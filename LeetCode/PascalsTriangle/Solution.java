@@ -18,9 +18,23 @@ package PascalsTriangle;
 
 import java.util.ArrayList;
 
+// AC on 1st try
 public class Solution {
 	public ArrayList<ArrayList<Integer>> generate(int numRows) {
 		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+	
+		for(int i = 0; i < numRows; i++) {
+			ArrayList<Integer> list = new ArrayList<Integer>();
+			if(i > 0) {
+				ArrayList<Integer> prev = res.get(i-1);
+				list.add(prev.get(0));
+				for(int j = 1; j < prev.size(); j++) {
+					list.add(prev.get(j) + prev.get(j - 1));
+				}
+			}
+			list.add(1);
+			res.add(list);
+		}
 		
 		return res;
 	}
