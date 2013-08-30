@@ -31,6 +31,7 @@ package FlattenBinaryTreetoLinkedList;
 
 import Helper.TreeNode;
 
+// AC on 1st try :)
 public class Solution {
 	public void flatten(TreeNode root) {
 		if(root != null) visit(root);
