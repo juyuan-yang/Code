@@ -33,6 +33,23 @@ import Helper.TreeNode;
 
 public class Solution {
 	public void flatten(TreeNode root) {
+		if(root != null) visit(root);
+	}
+	
+	// move left node to right, return the most right node
+	public TreeNode visit(TreeNode node) {
+		TreeNode left = node.left, right = node.right;
 		
+		if(left == null && right == null) return node;
+		else if(left == null) return visit(right);
+		else {
+			node.left = null;
+			node.right = left;
+			TreeNode lastLeft = visit(left);
+			if(right == null) return lastLeft;
+			lastLeft.right = right;
+			lastLeft.left = null;
+			return visit(right);
+		}
 	}
 }
