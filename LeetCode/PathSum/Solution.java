@@ -20,9 +20,13 @@ package PathSum;
 
 import Helper.TreeNode;
 
+// the code is really short! :) but AC on 2nd try :(
+// when root is null, should return false...
 public class Solution {
 	public boolean hasPathSum(TreeNode root, int sum) {
-		
-		return false;
+		if(root == null) return false;
+		if(root.left == null && root.right == null) return sum == root.val; // I wrote sum == 0 in 1st try :(
+		if(root.left != null && hasPathSum(root.left, sum - root.val)) return true;
+		else return root.right != null && hasPathSum(root.right, sum - root.val);
 	}
 }
