@@ -1,0 +1,19 @@
+TODO:
+research
+
+Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
+1. Palindrome Partition 1&2					Y						Y						3
+3. Sum Root to Leaf Numbers					Y						Y						1
+4. Surrounded Regions						Y						Y						5
+5. Best Time to Buy and Sell Stock	1&2&3	N						Y						1
+8. Valid Palindrome							N						Y						3
+9. Binary Tree Max Path Sum					N?						Y						3
+10. Triangle								N						Y						1
+11. PascalsTriangle 1&2						N						Y?						1
+13. Word Ladder 1							N?						Y						4
+14. Flatten Binary Tree to Linked List		N?						Y						2
+15. Path Sum 1&2							N?						N?						2
+17. Binary Tree Level Order Traversal 2		N?						Y?						3
+18. Balanced Binary Tree					Y?						N?						3 (TLE?)
+
+DONE:

@@ -10,9 +10,23 @@ package BalancedBinaryTree;
 
 import Helper.TreeNode;
 
+// AC on 2nd try
+// May meet Time Limit Exceed occasionally, so add a res == false check
+// Still meet TLE sometimes ? :(
 public class Solution {
+	boolean	res;
 	public boolean isBalanced(TreeNode root) {
-		
-		return false;
+		res = true;
+		visit(root);
+		return res;
+	}
+	
+	public int visit(TreeNode node) {
+		if(node == null) return 0;
+		if(res == false) return -1;
+		int left = visit(node.left);
+		int right = visit(node.right);
+		if(Math.abs(right - left) >= 2) res = false;
+		return Math.max(left, right) + 1;
 	}
 }
