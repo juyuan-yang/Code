@@ -15,5 +15,6 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 15. Path Sum 1&2							N?						N?						2
 17. Binary Tree Level Order Traversal 2		N?						Y?						3
 18. Balanced Binary Tree					Y?						N?						3 (TLE?)
+19. Populating Next Right Pointers in Each Node N?					Y?						3
 
 DONE:

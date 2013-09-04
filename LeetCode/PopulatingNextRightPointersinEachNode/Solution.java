@@ -38,8 +38,29 @@ package PopulatingNextRightPointersinEachNode;
 
 import Helper.TreeLinkNode;
 
+// AC on 2nd try, need to pay attention about cur and prev, and right way to assign next
 public class Solution {
 	public void connect(TreeLinkNode root) {
-		
+		TreeLinkNode cur = root;
+		while(cur != null) {
+			TreeLinkNode nextStart = null, prev = null;
+			
+			for( ; cur != null; cur = cur.next) {
+				if(nextStart == null) {
+					nextStart = (cur.left != null) ? cur.left : cur.right;
+				}
+
+				if(cur.left != null) {
+					cur.left.next = cur.right;
+					if(prev != null) {
+						prev.right.next = cur.left;
+					}
+				}
+				
+				prev = cur;
+			}
+			
+			cur = nextStart;
+		}
 	}
 }
