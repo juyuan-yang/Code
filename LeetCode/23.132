@@ -18,6 +18,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 19. Populating Next Right Pointers in Each Node 1&2  N?				Y?						3
 21. Minimum Depth of Binary Tree			N?						N?						2
 22. Longest Consecutive Sequence			Y						Y?						4
+23. Convert Sorted Array to Binary Search Tree	N?					N?						2
 
 DONE:
 
