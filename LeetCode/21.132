@@ -16,5 +16,6 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 17. Binary Tree Level Order Traversal 2		N?						Y?						3
 18. Balanced Binary Tree					Y?						N?						3 (TLE?)
 19. Populating Next Right Pointers in Each Node 1&2  N?				Y?						3
+21. Minimum Depth of Binary Tree			N?						N?						2
 
 DONE:
