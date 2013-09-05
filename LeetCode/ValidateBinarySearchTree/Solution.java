@@ -14,12 +14,18 @@ package ValidateBinarySearchTree;
 
 import Helper.TreeNode;
 
+// fuck... always fotget about, need to check the whole path from root to leaf, and compare..
 public class Solution {
 	public boolean isValidBST(TreeNode root) {
 		if(root == null) return true;
 		if(root.left == null && root.right == null) return true;
-		else if(root.left == null) return isValidBST(root.right);
-		else if(root.right == null) return isValidBST(root.left);
-		else return isValidBST(root.left) && isValidBST(root.right);
+		else if(root.left == null) {
+			return root.val < root.right.val && isValidBST(root.right);
+		} else if(root.right == null) {
+			return root.val > root.left.val && isValidBST(root.left);
+		} else {
+			return root.val > root.left.val && isValidBST(root.left) && 
+					root.val < root.right.val && isValidBST(root.right);
+		}
 	}
 }

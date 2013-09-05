@@ -27,14 +27,23 @@ import java.util.ArrayList;
 
 import Helper.TreeNode;
 
+// AC on 2nd try :( forgot the zigzag thing......
 public class Solution {
 	public ArrayList<ArrayList<Integer>> zigzagLevelOrder(TreeNode root) {
 		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
 		if(root != null) visit(root, 0, res);
+		for(int i = 1; i < res.size(); i += 2) {
+			ArrayList<Integer> list = res.get(i);
+			for(int j = 0; j < list.size() / 2; j++) {
+				int temp = list.get(j);
+				list.set(j, list.get(list.size()-1-j));
+				list.set(list.size()-1-j, temp);
+			}
+		}
 		return res;
 	}
 
-	public visit(TreeNode node, int depth, ArrayList<ArrayList<Integer>> res) {
+	public void visit(TreeNode node, int depth, ArrayList<ArrayList<Integer>> res) {
 		ArrayList<Integer> list;
 		if(depth >= res.size()) {
 			list = new ArrayList<Integer>();
