@@ -24,6 +24,8 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 26. Binary Tree Zigzag Level Order Traversal	Y?					Y						3
 27. Symmetric Tree							N?						N?						1
 28. Binary Tree Level Order Traversal		N?						N?						2
+29. Construct Bi-Tree from In&Post order Traversal	N?				N?						2 (Not recursive, but BFS?)
+30. Construct Bi-Tree from Pre&In order Traversal	N?				N?						2 (Not recursive, but BFS?)
 
 DONE:
 
@@ -31,8 +33,6 @@ Problem in schedule:
 Convert Sorted List to Binary Search Tree
 Distinct Subsequences
 Word Ladder2
-Construct Binary Tree from Inorder and Postorder Traversal
-Construct Binary Tree from Preorder and Inorder Traversal
 Recover Binary Search Tree
 Validate Binary Search Tree
 Interleaving String
