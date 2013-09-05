@@ -26,6 +26,7 @@ package SymmetricTree;
 
 import Helper.TreeNode;
 
+// AC on 1st try
 public class Solution {
 	public boolean isSymmetric(TreeNode root) {
 		if(root == null) return true;
@@ -37,4 +38,5 @@ public class Solution {
 		else if(p != null && q != null) {
 			return (p.val == q.val) && isSymmetric(p.left, q.right) && isSymmetric(p.right, q.left);
 		} else return false;
+	}
 }
