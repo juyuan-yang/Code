@@ -17,7 +17,9 @@ import Helper.TreeNode;
 public class Solution {
 	public boolean isValidBST(TreeNode root) {
 		if(root == null) return true;
-		if(root.left == null && root.right
-		return false;
+		if(root.left == null && root.right == null) return true;
+		else if(root.left == null) return isValidBST(root.right);
+		else if(root.right == null) return isValidBST(root.left);
+		else return isValidBST(root.left) && isValidBST(root.right);
 	}
 }
