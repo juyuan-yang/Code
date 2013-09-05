@@ -29,7 +29,19 @@ import Helper.TreeNode;
 
 public class Solution {
 	public ArrayList<ArrayList<Integer>> zigzagLevelOrder(TreeNode root) {
-		
-		return null;
+		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+		if(root != null) visit(root, 0, res);
+		return res;
+	}
+
+	public visit(TreeNode node, int depth, ArrayList<ArrayList<Integer>> res) {
+		ArrayList<Integer> list;
+		if(depth >= res.size()) {
+			list = new ArrayList<Integer>();
+			res.add(list);
+		} else list = res.get(depth);
+		list.add(node.val);
+		if(node.left != null) visit(node.left, depth+1, res);
+		if(node.right != null) visit(node.right, depth+1, res);
 	}
 }
