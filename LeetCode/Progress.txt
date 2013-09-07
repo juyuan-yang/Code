@@ -9,3 +9,4 @@ Date & Solved Problems
 9.2		18
 9.4		25
 9.5		30
+9.7		31
