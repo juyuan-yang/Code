@@ -27,13 +27,14 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 29. Construct Bi-Tree from In&Post order Traversal	N?				N?						2 (Not recursive, but BFS?)
 30. Construct Bi-Tree from Pre&In order Traversal	N?				N?						2 (Not recursive, but BFS?)
 31. Convert Sorted List to Binary Search Tree	N?					Y?						3
+32. Validate Binary Search Tree				N?						N?						2
+
 DONE:
 
 Problem in schedule:::
 Distinct Subsequences
 Word Ladder2
 Recover Binary Search Tree
-Validate Binary Search Tree
 Interleaving String
 Unique Binary Search Trees 1 & 2
 Binary Tree Inorder Traversal

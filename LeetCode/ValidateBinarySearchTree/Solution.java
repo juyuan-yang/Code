@@ -14,18 +14,17 @@ package ValidateBinarySearchTree;
 
 import Helper.TreeNode;
 
-// fuck... always fotget about, need to check the whole path from root to leaf, and compare..
+// AC on 2nd try :(
+// Need to record the range for each layer!!!
 public class Solution {
 	public boolean isValidBST(TreeNode root) {
-		if(root == null) return true;
-		if(root.left == null && root.right == null) return true;
-		else if(root.left == null) {
-			return root.val < root.right.val && isValidBST(root.right);
-		} else if(root.right == null) {
-			return root.val > root.left.val && isValidBST(root.left);
-		} else {
-			return root.val > root.left.val && isValidBST(root.left) && 
-					root.val < root.right.val && isValidBST(root.right);
-		}
+		return checkBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+	}
+		
+	public boolean checkBST(TreeNode node, int min, int max) {
+		if(node == null) return true;
+		if(node.val <= min || node.val >= max) return false;
+		return ((node.left == null) ? true : checkBST(node.left, min, node.val)) &&
+				((node.right == null) ? true : checkBST(node.right, node.val, max));
 	}
 }
