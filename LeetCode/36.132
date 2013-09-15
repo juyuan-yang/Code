@@ -31,6 +31,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 33. Restore IP Addresses					N?						Y						4
 34. Gray Code								N						N?						1
 35. Decode Ways								N?						N?						2
+36. Merge Sorted Array						N						N?						1
 
 DONE:
 
@@ -43,5 +44,4 @@ Unique Binary Search Trees 1 & 2
 Binary Tree Inorder Traversal
 Reverse Linked List 2
 Subsets 2
-Merge Sorted Array
 Scramble String

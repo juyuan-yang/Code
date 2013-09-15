@@ -11,6 +11,13 @@ package MergeSortedArray;
 
 public class Solution {
 	public void merge(int A[], int m, int B[], int n) {
-	 
+		int cur = m + n - 1;
+		while(cur >= 0) {
+			if(m == 0) A[cur] = B[--n];
+			else if(n != 0) {
+				A[cur] = (A[m-1] > B[n-1]) ? A[--m] : B[--n];
+			}
+			cur--;
+		}
 	}
 }
