@@ -28,6 +28,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 30. Construct Bi-Tree from Pre&In order Traversal	N?				N?						2 (Not recursive, but BFS?)
 31. Convert Sorted List to Binary Search Tree	N?					Y?						3
 32. Validate Binary Search Tree				N?						N?						2
+33. Restore IP Addresses					N?						Y						4
 
 DONE:
 
@@ -38,7 +39,6 @@ Recover Binary Search Tree
 Interleaving String
 Unique Binary Search Trees 1 & 2
 Binary Tree Inorder Traversal
-Restore IP Addresses
 Reverse Linked List 2
 Subsets 2
 Decode Ways
