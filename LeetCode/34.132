@@ -29,6 +29,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 31. Convert Sorted List to Binary Search Tree	N?					Y?						3
 32. Validate Binary Search Tree				N?						N?						2
 33. Restore IP Addresses					N?						Y						4
+34. Gray Code								N						N?						1
 
 DONE:
 
@@ -42,6 +43,5 @@ Binary Tree Inorder Traversal
 Reverse Linked List 2
 Subsets 2
 Decode Ways
-Gray Code
 Merge Sorted Array
 Scramble String
