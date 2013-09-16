@@ -25,42 +25,28 @@ import java.util.Stack;
 import Helper.TreeNode;
 
 public class Solution {
-	// iterative version is still a shit now :(
+	// Iterative version AC on 2nd try :( get stuck in the map part in 1st try, which is silly :(
 	public ArrayList<Integer> inorderTraversal(TreeNode root) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		if(root == null) return list;
 		
 		Stack<TreeNode> stack = new Stack<TreeNode>();
-		Map<TreeNode, Integer> map = new HashMap<TreeNode, Integer>();
+		Map<TreeNode, Boolean> map = new HashMap<TreeNode, Boolean>();
 		stack.add(root);
-		map.put(root, 0);
 		
 		while(stack.size() > 0) {
 			TreeNode node = stack.pop();
-			addNode(node.right, map, stack, list);
-			addNode(node, map, stack, list);
-			addNode(node.left, map, stack, list);
-		}
-		return list;
-	}
-	
-	public void addNode(TreeNode node, Map<TreeNode, Integer> map,
-				Stack<TreeNode> stack, ArrayList<Integer> list) {
-		if(node != null) {
-			if(!map.containsKey(node)) {
-				map.put(node, 0);
+			if(!map.containsKey(node)) { // expand
+				map.put(node, false);
+				if(node.right != null) stack.add(node.right);
 				stack.add(node);
-			} else {
-				int value = map.get(node);
-				if(value == 0){
-					map.put(node, 1);
-					stack.add(node);
-				} else if(value == 1){
-					list.add(node.val);
-					map.put(node, 2);
-				}
+				if(node.left != null) stack.add(node.left);
+			} else if(!map.get(node)){ // output
+				map.put(node, true);
+				list.add(node.val);
 			}
 		}
+		return list;
 	}
 	
 	// Recursive solution, AC on 1st try
