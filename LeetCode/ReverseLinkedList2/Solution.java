@@ -16,9 +16,29 @@ package ReverseLinkedList2;
 
 import Helper.ListNode;
 
+// AC on 3rd try :( forgot count++!!!!!!!!
 public class Solution {
 	public ListNode reverseBetween(ListNode head, int m, int n) {
+		ListNode origEnd = null, begin, cur = head, pre = null, next;
+		int count = 1;
+		while(cur != null && count < m) {
+			origEnd = cur;
+			cur = cur.next;
+			count ++; // forgot :(
+		}
+		begin = cur;
 		
-		return null;
+		while(cur != null && count <= n) {
+			next = cur.next;
+			cur.next = pre;
+			pre = cur;
+			cur = next;
+			count++; // forgot :(
+		}
+		
+		begin.next = cur;
+		if(origEnd == null) return pre;
+		origEnd.next = pre;
+		return head;
 	}
 }
