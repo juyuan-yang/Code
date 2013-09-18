@@ -35,6 +35,8 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 37. Binary Tree Inorder Traversal			N						N?						3
 38. Unique Binary Search Trees 1			N						N?						2
 39. Subsets 2								N?						N?						3
+40. Remove Duplicates from Sorted List		N						N?						1
+41. Remove Duplicates from Sorted List 2	N?						Y?						3 (Need to re-do at the beginning of 3rd round)
 
 DONE:
 
@@ -49,4 +51,3 @@ Scramble String
 Partition List
 Maximal Rectangle
 Largest Rectangle in Histogram
-Remove Duplicates from Sorted List 1 & 2
