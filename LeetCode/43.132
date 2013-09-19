@@ -38,6 +38,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 40. Remove Duplicates from Sorted List		N						N?						1
 41. Remove Duplicates from Sorted List 2	N?						Y?						3 (Need to re-do at the beginning of 3rd round)
 42. Reverse Linked List 2					N?						N?						2
+43. Unique Binary Search Trees 2			N						N?						2
 
 DONE:
 
@@ -46,7 +47,6 @@ Distinct Subsequences
 Word Ladder2
 Recover Binary Search Tree
 Interleaving String
-Unique Binary Search Trees 2
 Scramble String
 Partition List
 Maximal Rectangle
