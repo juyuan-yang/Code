@@ -39,6 +39,9 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 41. Remove Duplicates from Sorted List 2	N?						Y?						3 (Need to re-do at the beginning of 3rd round)
 42. Reverse Linked List 2					N?						N?						2
 43. Unique Binary Search Trees 2			N						N?						2
+44. Remove Duplicates from Sorted Array 2	N						N						1
+45. Subsets									N						N						1 (Recursive?)
+46. Combinations							N						N						1 (Recursive?)
 
 DONE:
 
@@ -52,7 +55,4 @@ Partition List
 Maximal Rectangle
 Largest Rectangle in Histogram
 Search in Rotated Sorted Array 2
-Remove Duplicates from Sorted Array 2
 Word Search
-Subsets
-Combinations
