@@ -26,11 +26,42 @@ Visually, the graph looks like the following:
 
 package CloneGraph;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import Helper.UndirectedGraphNode;
 
+// AC on 2nd try. Made the mistake that, for edge <a, b>, just need store it for a, not for b..
+// But I guess it could be simpler?
 public class Solution {
 	public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
+		if(node == null) return null;
+		Map<Integer, UndirectedGraphNode> map = new HashMap<Integer, UndirectedGraphNode>();
+		Map<Integer, Boolean> visited = new HashMap<Integer, Boolean>();
 		
-		return null;
+		UndirectedGraphNode newNode = new UndirectedGraphNode(node.label);
+		map.put(node.label, newNode);
+		visited.put(node.label, false);
+		
+		visit(newNode, node, map, visited);
+		return newNode;
+	}
+	
+	public void visit(UndirectedGraphNode newNode, UndirectedGraphNode orig, 
+			Map<Integer, UndirectedGraphNode> map, Map<Integer, Boolean> visited) {
+		if(!visited.containsKey(orig.label) || visited.get(orig.label)) return;
+		visited.put(orig.label, true);
+		
+		for(UndirectedGraphNode node : orig.neighbors) {
+			UndirectedGraphNode neigh;
+			if(!map.containsKey(node.label)) {
+				neigh = new UndirectedGraphNode(node.label);
+				map.put(node.label, neigh);
+				visited.put(node.label, false);
+				
+				visit(neigh, node, map, visited);
+			} else neigh = map.get(node.label);
+			newNode.neighbors.add(neigh);
+		}
 	}
 }
