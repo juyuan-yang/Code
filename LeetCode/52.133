@@ -47,6 +47,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 49. Word Search								N?						N?						2
 50. Plus One								N						N?						2
 51. Simplify Path							N?						N?						3
+52. Set Matrix Zeroes						Y?						Y?						4
 
 DONE:
 
@@ -62,7 +63,6 @@ Largest Rectangle in Histogram
 Search in Rotated Sorted Array 2
 Climbing Stairs
 Edit Distance
-Set Matrix Zeroes
 Sqrt(x)
 Text Justification
 Sort Colors

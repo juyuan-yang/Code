@@ -1,5 +1,5 @@
 /*
- * Set Matrix Zeroes AC Rate: 272/927 My Submissions
+ * Set Matrix Zeroes - AC Rate: 272/927 - My Submissions
 Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.
 
 click to show follow up.
@@ -13,8 +13,35 @@ Could you devise a constant space solution?
 
 package SetMatrixZeroes;
 
+// AC on 1st try :)
 public class Solution {
 	public void setZeroes(int[][] matrix) {
+		if(matrix == null || matrix.length == 0 || matrix[0].length == 0) return;
 		
+		boolean firstCol = false, firstRow = false;
+		
+		for(int i = 0; i < matrix.length; i++)
+			if(matrix[i][0] == 0) firstCol = true;
+		for(int j = 0; j < matrix[0].length; j++)
+			if(matrix[0][j] == 0) firstRow = true;
+		
+		for(int i = 1; i < matrix.length; i++){
+			for(int j = 1; j < matrix[0].length; j++){
+				if(matrix[i][j] == 0) {
+					matrix[i][0] = 0;
+					matrix[0][j] = 0;
+				}
+			}
+		}
+		
+		for(int i = 1; i < matrix.length; i++){
+			for(int j = 1; j < matrix[0].length; j++){
+				if(matrix[i][0] == 0 || matrix[0][j] == 0) matrix[i][j] = 0;
+			}
+		}
+		for(int i = 0; i < matrix.length; i++)
+			if(firstCol) matrix[i][0] = 0;
+		for(int j = 0; j < matrix[0].length; j++)
+			if(firstRow) matrix[0][j] = 0;
 	}
 }
