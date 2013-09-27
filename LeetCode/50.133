@@ -45,6 +45,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 47. Search in Rotated Sorted Array			N						N?						3
 48. Clone Graph								Y?						Y?						4
 49. Word Search								N?						N?						2
+50. Plus One								N						N?						2
 
 DONE:
 
@@ -64,7 +65,6 @@ Edit Distance
 Set Matrix Zeroes
 Sqrt(x)
 Text Justification
-Plus One
 Sort Colors
 Search a 2D Matrix
 Minimum Window Substring

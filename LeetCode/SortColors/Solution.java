@@ -20,6 +20,9 @@ package SortColors;
 
 public class Solution {
 	public void sortColors(int[] A) {
+		if(A == null || A.length == 0) return;
+		int start = 0, end = A.length - 1;
 		
+
 	}
 }
