@@ -46,6 +46,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 48. Clone Graph								Y?						Y?						4
 49. Word Search								N?						N?						2
 50. Plus One								N						N?						2
+51. Simplify Path							N?						N?						3
 
 DONE:
 
@@ -60,7 +61,6 @@ Maximal Rectangle
 Largest Rectangle in Histogram
 Search in Rotated Sorted Array 2
 Climbing Stairs
-Simplify Path
 Edit Distance
 Set Matrix Zeroes
 Sqrt(x)
