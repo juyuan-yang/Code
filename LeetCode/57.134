@@ -51,6 +51,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 53. Search a 2D Matrix						N?						N?						2
 54. Interleaving String						N?						N?						3 (Other algorithm?)
 55. Gas Station								N?						Y?						4
+56. Unique Paths 1&2						N?						N?						2 (Catalan number)
 
 DONE:
 
@@ -73,4 +74,3 @@ Valid Number
 Add Binary
 Minimum Path
 Merge Two Sorted Lists
-Unique Paths 1&2
