@@ -48,6 +48,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 50. Plus One								N						N?						2
 51. Simplify Path							N?						N?						3
 52. Set Matrix Zeroes						Y?						Y?						4
+53. Search a 2D Matrix						N?						N?						2
 
 DONE:
 
@@ -66,5 +67,4 @@ Edit Distance
 Sqrt(x)
 Text Justification
 Sort Colors
-Search a 2D Matrix
 Minimum Window Substring
