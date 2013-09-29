@@ -49,6 +49,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 51. Simplify Path							N?						N?						3
 52. Set Matrix Zeroes						Y?						Y?						4
 53. Search a 2D Matrix						N?						N?						2
+54. Interleaving String						N?						N?						3 (Other algorithm?)
 
 DONE:
 
@@ -56,7 +57,6 @@ Problem in schedule----:
 Distinct Subsequences
 Word Ladder2
 Recover Binary Search Tree
-Interleaving String
 Scramble String
 Partition List
 Maximal Rectangle
