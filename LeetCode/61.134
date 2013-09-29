@@ -51,7 +51,11 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 53. Search a 2D Matrix						N?						N?						2
 54. Interleaving String						N?						N?						3 (Other algorithm?)
 55. Gas Station								N?						Y?						4
-56. Unique Paths 1&2						N?						N?						2 (Catalan number)
+56. Unique Paths 1&2						N?						N?						2 (Catalan number? Constant space?)
+58. Add Binary								N						N?						1
+59. Climbing Stairs							N						N?						1 
+60. Minimum Path Sum						N						N?						2 (Less space?)
+61. Merge Two Sorted Lists					N?						N?						3
 
 DONE:
 
@@ -64,13 +68,9 @@ Partition List
 Maximal Rectangle
 Largest Rectangle in Histogram
 Search in Rotated Sorted Array 2
-Climbing Stairs
 Edit Distance
 Sqrt(x)
 Text Justification
 Sort Colors
 Minimum Window Substring
 Valid Number
-Add Binary
-Minimum Path
-Merge Two Sorted Lists
