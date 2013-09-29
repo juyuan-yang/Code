@@ -50,6 +50,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 52. Set Matrix Zeroes						Y?						Y?						4
 53. Search a 2D Matrix						N?						N?						2
 54. Interleaving String						N?						N?						3 (Other algorithm?)
+55. Gas Station								N?						Y?						4
 
 DONE:
 
@@ -72,5 +73,4 @@ Valid Number
 Add Binary
 Minimum Path
 Merge Two Sorted Lists
-Gas Station
 Unique Paths 1&2
