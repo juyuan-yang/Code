@@ -1,5 +1,5 @@
 /*
- * Insert Interval AC Rate: 367/1853 My Submissions
+ * Insert Interval - AC Rate: 367/1853 - My Submissions
 Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).
 
 You may assume that the intervals were initially sorted according to their start times.
@@ -19,9 +19,30 @@ import java.util.ArrayList;
 
 import Helper.Interval;
 
+// AC on 1st try :)
 public class Solution {
 	public ArrayList<Interval> insert(ArrayList<Interval> intervals, Interval newInterval) {
-		
-		return null;
+		if(newInterval == null) return intervals;
+		ArrayList<Interval> res = new ArrayList<Interval>();
+		if(intervals == null) res.add(newInterval);
+		else {
+			boolean added = false;
+			for(int i = 0; i < intervals.size(); i++) {
+				Interval cur = intervals.get(i);
+				if(cur.end < newInterval.start) res.add(cur);
+				else if(cur.start > newInterval.end){
+					if(!added) {
+						added = true;
+						res.add(newInterval);
+					}
+					res.add(cur);
+				} else {
+					if(cur.start < newInterval.start) newInterval.start = cur.start;
+					if(cur.end > newInterval.end) newInterval.end = cur.end;
+				}
+			}
+			if(!added) res.add(newInterval);
+		}
+		return res;
 	}
 }

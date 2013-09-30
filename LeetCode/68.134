@@ -58,6 +58,11 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 61. Merge Two Sorted Lists					N?						N?						3
 62. Recover Binary Search Tree				N?						N?						3 (other ways?)
 63. Sqrt(x)									N?						N?						2
+64. Permutation Sequence					N?						Y?						4
+65. Length of Last Word						N						N?						2
+66. Insert Interval							N						N?						2
+67. Merge Intervals							N						N?						3 (without sort?)
+68. Jump Game								N						N						1
 
 DONE:
 
@@ -75,6 +80,4 @@ Sort Colors
 Minimum Window Substring
 Valid Number
 Rotate List
-Permutation Sequence
 Spiral Matrix 2
-Length of Last Word
