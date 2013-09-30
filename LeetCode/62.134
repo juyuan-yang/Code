@@ -56,13 +56,13 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 59. Climbing Stairs							N						N?						1 
 60. Minimum Path Sum						N						N?						2 (Less space?)
 61. Merge Two Sorted Lists					N?						N?						3
+62. Recover Binary Search Tree				N?						N?						3 (other ways?)
 
 DONE:
 
 Problem in schedule----:
 Distinct Subsequences
 Word Ladder2
-Recover Binary Search Tree
 Scramble String
 Partition List
 Maximal Rectangle
