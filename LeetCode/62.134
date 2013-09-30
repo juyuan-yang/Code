@@ -57,6 +57,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 60. Minimum Path Sum						N						N?						2 (Less space?)
 61. Merge Two Sorted Lists					N?						N?						3
 62. Recover Binary Search Tree				N?						N?						3 (other ways?)
+63. Sqrt(x)									N?						N?						2
 
 DONE:
 
@@ -69,8 +70,11 @@ Maximal Rectangle
 Largest Rectangle in Histogram
 Search in Rotated Sorted Array 2
 Edit Distance
-Sqrt(x)
 Text Justification
 Sort Colors
 Minimum Window Substring
 Valid Number
+Rotate List
+Permutation Sequence
+Spiral Matrix 2
+Length of Last Word
