@@ -63,6 +63,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 66. Insert Interval							N						N?						2
 67. Merge Intervals							N						N?						3 (without sort?)
 68. Jump Game								N						N						1
+69. Candy									N?						N?						3
 
 DONE:
 
