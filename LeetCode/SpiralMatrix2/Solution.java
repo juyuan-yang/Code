@@ -1,5 +1,5 @@
 /*
- * Spiral Matrix II AC Rate: 341/1052 My Submissions
+ * Spiral Matrix II - AC Rate: 341/1052 - My Submissions
 Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.
 
 For example,

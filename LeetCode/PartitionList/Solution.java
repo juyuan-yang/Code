@@ -26,20 +26,18 @@ public class Solution {
 	
 	public ListNode partition(ListNode head, int x) {
 		if(head == null) return null;
-		ListNode big = null, cur = head, bigStart = null, smallStart = null, small = null;
-		while(cur != null) {
-			if(cur.val < x) {
-				if(smallStart == null) smallStart = cur;
-				if(small != null) small.next = cur;
-				small = cur;
-			} else {
+		ListNode big = null, cur = head, bigStart = null;
+		while(true) {
+			if(cur.val >= x) {
 				if(bigStart == null) bigStart = cur;
 				if(big != null) big.next = cur;
 				big = cur;
+				if(cur == head) head = head.next;
 			}
+			if(cur.next == null) break;
 			cur = cur.next;
 		}
-		if(bigStart != null && small != null) small.next = bigStart;
-		return smallStart;
+		if(bigStart != null && cur != null) cur.next = bigStart;
+		return head;
 	}
 }
