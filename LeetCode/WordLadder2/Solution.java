@@ -32,22 +32,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-// Time Limit Exceed :(
+// AC after several try :(
+// Maybe I should re-write again sometime later...
 public class Solution {
-	public static void main(String[] args) {
-		Solution s = new Solution();
-		HashSet<String> set = new HashSet<String>();
-		set.add("a");
-		set.add("b");
-		set.add("c");
-		for(ArrayList<String> list : s.findLadders("a", "c", set)) {
-			for(String str : list) {
-				System.out.print(str + " ");
-			}
-			System.out.println();
-		}
-	}
-	
 	public ArrayList<ArrayList<String>> findLadders(String start, String end, HashSet<String> dict) {
 		ArrayList<ArrayList<String>> res = new ArrayList<ArrayList<String>>();
 		if(start == null || end == null || dict.size() == 0) return res;
@@ -62,16 +49,19 @@ public class Solution {
 		
 		toVisit.add(start);
 		parents.put(start, new ArrayList<String>());
+		visited.put(start, true);
 		while(toVisit.size() > 0) {
 			Set<String> newSet = new HashSet<String>();
 			for(String str : toVisit) {
 				if(str.equals(end)) {
-					findAllRes(parents, res, step, 0, start, end, new String[step]);
+				    String[] words = new String[step];
+				    words[0] = end;
+					findAllRes(parents, res, step, 1, start, end, words);
 					return res;
 				}
-				visited.put(str, true);
 				newSet.addAll(findNextStrs(str, visited, parents, dict, end));
 			}
+			for(String str : newSet) visited.put(str, true);
 			toVisit = newSet;
 			step++;
 		}
@@ -85,10 +75,6 @@ public class Solution {
 			ArrayList<String> list = new ArrayList<String>();
 			for(int i = step-1; i >= 0; i--) list.add(words[i]);
 			res.add(list);
-			return;
-		} else if(curStep == 0) {
-			words[0] = curWord;
-			findAllRes(parents, res, step, curStep+1, start, curWord, words);
 			return;
 		}
 		for(String next : parents.get(curWord)) {

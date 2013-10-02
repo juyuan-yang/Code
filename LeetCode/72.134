@@ -64,18 +64,18 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 67. Merge Intervals							N						N?						3 (without sort?)
 68. Jump Game								N						N						1
 69. Candy									N?						N?						3
+70. Edit Distance							N?						N?						4 (more efficient? / delete?)
+71. Word Ladder2							N?						N?						5
+72. Scramble String							N?						Y?						4 (other solution?)
 
 DONE:
 
 Problem in schedule----:
 Distinct Subsequences
-Word Ladder2
-Scramble String
 Partition List
 Maximal Rectangle
 Largest Rectangle in Histogram
 Search in Rotated Sorted Array 2
-Edit Distance
 Text Justification
 Sort Colors
 Minimum Window Substring

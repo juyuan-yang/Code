@@ -23,3 +23,4 @@ Date & Solved Problems
 9.28	53
 9.29	61
 9.30	69
+10.1	72
