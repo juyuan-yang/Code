@@ -67,6 +67,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 70. Edit Distance							N?						N?						4 (more efficient? / delete?)
 71. Word Ladder2							N?						N?						5
 72. Scramble String							N?						Y?						4 (other solution?)
+73. Single Number							N?						N?						2
 
 DONE:
 
@@ -82,3 +83,4 @@ Minimum Window Substring
 Valid Number
 Rotate List
 Spiral Matrix 2
+Single Number 2
