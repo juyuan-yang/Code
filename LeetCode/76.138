@@ -69,6 +69,8 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 72. Scramble String							N?						Y?						4 (other solution?)
 73. Single Number							N?						N?						2
 74. Single Number 2							N?						Y?						4 (how other people take care of negatives?)
+75. Copy List with Random Pointer			N?						N?						3 (don't use map?)
+76. Word Break								N?						Y?						4 (other ways?)
 
 DONE:
 
@@ -84,5 +86,3 @@ Minimum Window Substring
 Valid Number
 Rotate List
 Spiral Matrix 2
-Word Break
-Copy List with Random Pointer
