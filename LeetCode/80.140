@@ -74,6 +74,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 77. Distinct Subsequences					N?						Y?						5 
 78. Search in Rotated Sorted Array 2		N?						Y?						4
 79. Sort Colors								N?						N?						3
+80. Maximum Subarray						N?						N?						3 (Divide and conquer?)
 
 DONE:
 
@@ -87,3 +88,4 @@ Valid Number
 Rotate List
 Spiral Matrix 2
 Word Break 2
+Spiral Matrix
