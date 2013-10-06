@@ -71,11 +71,11 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 74. Single Number 2							N?						Y?						4 (how other people take care of negatives?)
 75. Copy List with Random Pointer			N?						N?						3 (don't use map?)
 76. Word Break								N?						Y?						4 (other ways?)
+77. Distinct Subsequences					N?						Y?						5 
 
 DONE:
 
 Problem in schedule----:
-Distinct Subsequences
 Partition List
 Maximal Rectangle
 Largest Rectangle in Histogram
@@ -86,3 +86,4 @@ Minimum Window Substring
 Valid Number
 Rotate List
 Spiral Matrix 2
+Word Break 2
