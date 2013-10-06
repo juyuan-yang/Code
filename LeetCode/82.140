@@ -75,6 +75,8 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 78. Search in Rotated Sorted Array 2		N?						Y?						4
 79. Sort Colors								N?						N?						3
 80. Maximum Subarray						N?						N?						3 (Divide and conquer?)
+81. pow(x, n)								N?						N?						3 (non-recursive?)
+82. Rotate Image							N						N						1
 
 DONE:
 
