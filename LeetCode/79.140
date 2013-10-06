@@ -72,6 +72,8 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 75. Copy List with Random Pointer			N?						N?						3 (don't use map?)
 76. Word Break								N?						Y?						4 (other ways?)
 77. Distinct Subsequences					N?						Y?						5 
+78. Search in Rotated Sorted Array 2		N?						Y?						4
+79. Sort Colors								N?						N?						3
 
 DONE:
 
@@ -79,9 +81,7 @@ Problem in schedule----:
 Partition List
 Maximal Rectangle
 Largest Rectangle in Histogram
-Search in Rotated Sorted Array 2
 Text Justification
-Sort Colors
 Minimum Window Substring
 Valid Number
 Rotate List

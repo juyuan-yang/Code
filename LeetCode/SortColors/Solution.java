@@ -19,28 +19,24 @@ Could you come up with an one-pass algorithm using only constant space?
 package SortColors;
 
 public class Solution {
+	// AC on 2nd try :( Anyway, should be easy
 	public void sortColors(int[] A) {
 		if(A == null || A.length == 0) return;
-		int leftCur = 0, leftOne = -1, rightOne = -1, rightCur = A.length - 1;
+		int leftOne = -1, cur = 0, right = A.length - 1;
 		
-		while(leftCur < rightCur && A[leftCur] == 0) leftCur++;
-		while(leftCur < rightCur && A[rightCur] == 2) rightCur--;
-		
-		while(leftCur < rightCur) {
-			if(A[leftCur] == 0) {
+		while(cur <= right) {
+			if(A[cur] == 0) {
 				if(leftOne != -1) {
-					A[leftCur] = 1;
 					A[leftOne++] = 0;
+					A[cur] = 1;
 				}
-			} else if(A[leftCur] == 1) {
-				if(leftOne == -1) leftOne = leftCur;
-			} else { // 2
-				if(rightOne != -1) {
-					A[leftCur] = 1;
-					A[rightOne--] = 2;
-				} else { // rightOne == -1
-					
-				}
+				cur++;
+			} else if(A[cur] == 1) {
+				if(leftOne == -1) leftOne = cur;
+				cur++;
+			} else {
+				A[cur] = A[right];
+				A[right--] = 2;
 			}
 		}
 	}
