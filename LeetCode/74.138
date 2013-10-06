@@ -68,6 +68,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 71. Word Ladder2							N?						N?						5
 72. Scramble String							N?						Y?						4 (other solution?)
 73. Single Number							N?						N?						2
+74. Single Number 2							N?						Y?						4 (how other people take care of negatives?)
 
 DONE:
 
@@ -83,4 +84,5 @@ Minimum Window Substring
 Valid Number
 Rotate List
 Spiral Matrix 2
-Single Number 2
+Word Break
+Copy List with Random Pointer
