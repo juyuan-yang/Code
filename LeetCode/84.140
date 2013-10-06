@@ -77,6 +77,8 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 80. Maximum Subarray						N?						N?						3 (Divide and conquer?)
 81. pow(x, n)								N?						N?						3 (non-recursive?)
 82. Rotate Image							N						N						1
+83. Permutations							N						N						2
+84. Jump Game 2								N						N?						2
 
 DONE:
 
