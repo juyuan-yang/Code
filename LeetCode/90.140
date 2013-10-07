@@ -80,26 +80,27 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 83. Permutations							N						N						2
 84. Jump Game 2								N						N?						2
 85. N-Queens 1&2							N						N						2
+87. Combination Sum 1&2						N?						N?						3
+89. Count and Say							N						N?						2
+90. Largest Rectangle in Histogram			N						N?						2
 
 DONE:
 
 Problem in schedule----:
 Partition List
 Maximal Rectangle
-Largest Rectangle in Histogram
 Text Justification
 Minimum Window Substring
 Valid Number
 Rotate List
+Wildcard Matching
+
 Spiral Matrix 2
 Word Break 2
 Spiral Matrix
 Anagrams
-Count and Say
-Wildcard Matching
 Multiply Strings
 Trapping Rain Water
 First Missing Positive
-Combination Sum 1&2
 Sudoku Solver
 Valid Sudoku

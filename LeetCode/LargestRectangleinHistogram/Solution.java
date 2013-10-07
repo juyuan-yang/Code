@@ -17,23 +17,22 @@ package LargestRectangleinHistogram;
 
 import java.util.Stack;
 
+// AC on 2nd try :( actually, it's hard to come up the algorithm all by myself
 public class Solution {
 	public int largestRectangleArea(int[] height) {
 		if(height == null || height.length == 0) return 0;
 		Stack<Integer> stack = new Stack<Integer>();
-		int res = height[0];
+		int max = 0, res = 0, i = 0;
 		
-		for(int i = 0; i < height.length; i++) {
-			if(stack.size() == 0) stack.add(i);
+		while(i <= height.length) {
+			if(stack.isEmpty() || (i < height.length && height[i] >= height[stack.peek()])) 
+				stack.add(i++);
 			else {
-				int index = stack.peek();
-				if(height[i] >= height[index]) stack.add(i);
-				else {
-					stack.pop();
-					
-				}
+				res = height[stack.pop()];
+				res *= (stack.isEmpty() ? i : (i - 1 - stack.peek()));
+				if(res > max) max = res;
 			}
 		}
-		return res;
+		return max;
 	}
 }

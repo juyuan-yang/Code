@@ -27,3 +27,4 @@ Date & Solved Problems
 10.2	73
 10.5	76
 10.6	86
+10.7	90
