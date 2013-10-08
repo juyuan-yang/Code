@@ -11,16 +11,17 @@ Your algorithm should run in O(n) time and uses constant space.
 
 package FirstMissingPositive;
 
+// AC after several tries... Forgot the break statement... also LC seems to have some problems.
 public class Solution {
 	public int firstMissingPositive(int[] A) {
-		if(A == null || A.length == 0) return 0;
+		if(A == null || A.length == 0) return 1;
 		for(int i = 0; i < A.length; i++) {
 			while(A[i] != i + 1) {
 				if(A[i] > 0 && A[i] <= A.length && A[A[i]-1] != A[i]) {
 					int temp = A[i];
 					A[i] = A[A[i] - 1];
 					A[temp-1] = temp;
-				}
+				} else break;
 			}
 		}
 		for(int i = 0; i < A.length; i++) {

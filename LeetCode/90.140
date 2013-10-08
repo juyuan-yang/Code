@@ -83,12 +83,13 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 87. Combination Sum 1&2						N?						N?						3
 89. Count and Say							N						N?						2
 90. Largest Rectangle in Histogram			N						N?						2
+91. Maximal Rectangle						N?						N?						3
+92. First Missing Positive					N?						N?						2
 
 DONE:
 
 Problem in schedule----:
 Partition List
-Maximal Rectangle
 Text Justification
 Minimum Window Substring
 Valid Number
