@@ -11,20 +11,51 @@ The function prototype should be:
 bool isMatch(const char *s, const char *p)
 
 Some examples:
-isMatch("aa","a") ¡ú false
-isMatch("aa","aa") ¡ú true
-isMatch("aaa","aa") ¡ú false
-isMatch("aa", "*") ¡ú true
-isMatch("aa", "a*") ¡ú true
-isMatch("ab", "?*") ¡ú true
-isMatch("aab", "c*a*b") ¡ú false
+isMatch("aa","a") ï¿½ï¿½ false
+isMatch("aa","aa") ï¿½ï¿½ true
+isMatch("aaa","aa") ï¿½ï¿½ false
+isMatch("aa", "*") ï¿½ï¿½ true
+isMatch("aa", "a*") ï¿½ï¿½ true
+isMatch("ab", "?*") ï¿½ï¿½ true
+isMatch("aab", "c*a*b") ï¿½ï¿½ false
  */
 
 package WildcardMatching;
 
 public class Solution {
+	public static void main(String[] args) {
+		Solution s = new Solution();
+		System.out.println(s.isMatch("", "*"));
+	}
+	
 	public boolean isMatch(String s, String p) {
+		if(p == null || p.length() == 0) return (s == null || s.length() == 0);
 		
-		return false;
+		s = s + '\0';
+		p = p + '\0';
+		
+		int sb = 0, pb = 0, pre = -1, lastStar = -1;
+		while(sb < s.length() && s.charAt(sb) != '\0') {
+			char sc = s.charAt(sb), pc = p.charAt(pb);
+			if(pc == '?' || sc == pc) {
+				sb++;
+				pb++;
+			} else if(pc == '*') {
+				pre = sb;
+				lastStar = pb;
+				pb++;
+			} else if(lastStar != -1){
+				pb = lastStar + 1;
+				sb = pre + 1;
+				pre++;
+			} else return false;
+		}
+		
+		while(pb < p.length()) {
+			if(p.charAt(pb) != '*' && p.charAt(pb) != '\0') return false;
+			else pb++;
+		}
+		
+		return true;
 	}
 }
