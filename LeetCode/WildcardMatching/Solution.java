@@ -23,12 +23,44 @@ isMatch("aab", "c*a*b") �� false
 package WildcardMatching;
 
 public class Solution {
-	public static void main(String[] args) {
-		Solution s = new Solution();
-		System.out.println(s.isMatch("", "*"));
+	// my version... almost copy, but just try to do it all myself
+	public boolean isMatch(String s, String p) {
+		if(p == null || p.isEmpty()) return (s == null || s.isEmpty());
+		if(s == null || s.isEmpty()) {
+			for(int i = 0; i < p.length(); i++) 
+				if(p.charAt(i) != '*') return false;
+			return true;
+		}
+		
+		int i = 0, j = 0;
+		int lastStar = -1, pre = -1;
+		
+		while(i < s.length()) {
+			char sc = (i == s.length() ? '\0' : s.charAt(i));
+			char pc = (j == p.length() ? '\0' : p.charAt(j));
+			
+			if(sc == pc || pc == '?') {
+				i++;
+				j++;
+			} else if(pc == '*') {
+				lastStar = j;
+				pre = i;
+				j++;
+			} else if(lastStar != -1) {
+				i = ++pre;
+				j = lastStar + 1;
+			} else return false;
+		}
+		
+		while(j < p.length()) {
+			if(p.charAt(j++) != '*') return false;
+		}
+		
+		return true;
 	}
 	
-	public boolean isMatch(String s, String p) {
+	// version from yxyxyx
+	public boolean isMatch_YX(String s, String p) {
 		if(p == null || p.length() == 0) return (s == null || s.length() == 0);
 		
 		s = s + '\0';

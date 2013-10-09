@@ -85,6 +85,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 90. Largest Rectangle in Histogram			N						N?						2
 91. Maximal Rectangle						N?						N?						3
 92. First Missing Positive					N?						N?						2
+93. Wildcard Matching						N?						N?						4
 
 DONE:
 
@@ -94,7 +95,6 @@ Text Justification
 Minimum Window Substring
 Valid Number
 Rotate List
-Wildcard Matching
 
 Spiral Matrix 2
 Word Break 2
