@@ -86,6 +86,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 91. Maximal Rectangle						N?						N?						3
 92. First Missing Positive					N?						N?						2
 93. Wildcard Matching						N?						N?						4
+94. Spiral Matrix 2							N?						N?						4 (other ways)
 
 DONE:
 
@@ -96,7 +97,6 @@ Minimum Window Substring
 Valid Number
 Rotate List
 
-Spiral Matrix 2
 Word Break 2
 Spiral Matrix
 Anagrams
