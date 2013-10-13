@@ -90,6 +90,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 95. Spiral Matrix							N?						N?						4 (same as 2)
 96. Anagrams								N?						N?						2
 97. Multiply Strings						N						N?						2
+98. Valid Sudoku							N						N?						2 (better writing?)
 
 DONE:
 
@@ -102,6 +103,4 @@ Rotate List
 
 Word Break 2
 Trapping Rain Water
-First Missing Positive
 Sudoku Solver
-Valid Sudoku
