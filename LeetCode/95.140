@@ -87,6 +87,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 92. First Missing Positive					N?						N?						2
 93. Wildcard Matching						N?						N?						4
 94. Spiral Matrix 2							N?						N?						4 (other ways)
+95. Spiral Matrix							N?						N?						4 (same as 2)
 
 DONE:
 
@@ -98,7 +99,6 @@ Valid Number
 Rotate List
 
 Word Break 2
-Spiral Matrix
 Anagrams
 Multiply Strings
 Trapping Rain Water
