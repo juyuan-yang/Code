@@ -88,6 +88,8 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 93. Wildcard Matching						N?						N?						4
 94. Spiral Matrix 2							N?						N?						4 (other ways)
 95. Spiral Matrix							N?						N?						4 (same as 2)
+96. Anagrams								N?						N?						2
+97. Multiply Strings						N						N?						2
 
 DONE:
 
@@ -99,8 +101,6 @@ Valid Number
 Rotate List
 
 Word Break 2
-Anagrams
-Multiply Strings
 Trapping Rain Water
 First Missing Positive
 Sudoku Solver
