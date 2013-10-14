@@ -99,6 +99,8 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 104. Remove Duplicates from Sorted Array	N						N						0
 105. Remove Element							N						N						0
 106. Longest Valid Parentheses				N?						N?						2
+107. Generate Parentheses					N						N?						2
+108. Valid Parentheses						N?						N?						2
 
 DONE:
 
