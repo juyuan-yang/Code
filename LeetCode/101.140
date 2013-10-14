@@ -93,6 +93,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 98. Valid Sudoku							N						N?						2 (better writing?)
 99. Trapping Rain Water						N?						N?						2
 100. Permutations II						N?						N?						3 (about iterating map)
+101. Sudoku Solver							N						N?						1
 
 DONE:
 
@@ -104,4 +105,3 @@ Valid Number
 Rotate List
 
 Word Break 2
-Sudoku Solver
