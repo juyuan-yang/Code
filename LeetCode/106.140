@@ -98,6 +98,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 103. Search Insert Position					N						N?						1
 104. Remove Duplicates from Sorted Array	N						N						0
 105. Remove Element							N						N						0
+106. Longest Valid Parentheses				N?						N?						2
 
 DONE:
 
@@ -109,3 +110,9 @@ Valid Number
 Rotate List
 
 Word Break 2
+Longest Valid Parentheses
+Next Permutation
+Substring with Concatenation of All Words
+Divide Two Integers
+Implement strStr
+Reverse Nodes in k-Group
