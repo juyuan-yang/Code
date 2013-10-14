@@ -94,6 +94,10 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 99. Trapping Rain Water						N?						N?						2
 100. Permutations II						N?						N?						3 (about iterating map)
 101. Sudoku Solver							N						N?						1
+102. Search for a Range						N						N?						2 (better writing?)
+103. Search Insert Position					N						N?						1
+104. Remove Duplicates from Sorted Array	N						N						0
+105. Remove Element							N						N						0
 
 DONE:
 
