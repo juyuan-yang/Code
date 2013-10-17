@@ -103,6 +103,8 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 108. Valid Parentheses						N?						N?						2
 109. Add Two Numbers						N						N?						1
 110. Letter Combinations of a Phone Number	N						N?						1
+111. Integer to Roman						N						N?						2
+112. Roman to Integer						N						N?						2
 
 DONE:
 
@@ -114,7 +116,6 @@ Valid Number
 Rotate List
 
 Word Break 2
-Longest Valid Parentheses
 Next Permutation
 Substring with Concatenation of All Words
 Divide Two Integers
