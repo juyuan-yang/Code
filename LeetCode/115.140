@@ -106,15 +106,15 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 111. Integer to Roman						N						N?						2
 112. Roman to Integer						N						N?						2
 113. Next Permutation						N						N?						4 (other solutions?)
+114. Rotate List							N						N?						3 (beautiful codes?)
+115. Text Justification						N						N?						4 (beautiful ways?)
 
 DONE:
 
 Problem in schedule----:
 Partition List
-Text Justification
 Minimum Window Substring
 Valid Number
-Rotate List
 
 Word Break 2
 Next Permutation
