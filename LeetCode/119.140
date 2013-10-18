@@ -110,6 +110,8 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 115. Text Justification						N						N?						4 (beautiful ways?)
 116. Partition List							N						N?						5 (beautiful codes!)
 117. Reverse Nodes in k-Group				N						N?						3 (clean codes?)
+118. Swap Nodes in Pairs					N						N?						2
+119. Merge k Sorted Lists					N						N?						2
 
 DONE:
 
