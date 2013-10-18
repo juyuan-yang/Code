@@ -112,6 +112,8 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 117. Reverse Nodes in k-Group				N						N?						3 (clean codes?)
 118. Swap Nodes in Pairs					N						N?						2
 119. Merge k Sorted Lists					N						N?						2
+120. Remove Nth Node From End of List		N						N?						1
+121. 3 Sum									N						N						1
 
 DONE:
 
