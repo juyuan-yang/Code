@@ -20,8 +20,38 @@ package ReverseNodesinkGroup;
 
 import Helper.ListNode;
 
+// AC on 2nd try :( missing one statement in 1st try
 public class Solution {
 	public ListNode reverseKGroup(ListNode head, int k) {
-		return null;
+		if(k == 1) return head;
+		ListNode preEnd = null, start = head, nextStart = null, cur = head;
+		int has = 0;
+		while(cur != null) {
+			has++;
+			if(has == k) {
+				nextStart = cur.next;
+				reverse(start, cur);
+				if(preEnd == null) head = cur;
+				else preEnd.next = cur;
+				preEnd = start;
+				start.next = nextStart;
+				
+				has = 0;
+				start = nextStart;
+				cur = start; // bug, forgot in 1st try
+			} else cur = cur.next;
+		}
+		return head;
+	}
+	
+	public void reverse(ListNode start, ListNode end) {
+		ListNode pre = null, cur = start, next;
+		while(cur != end) {
+			next = cur.next;
+			cur.next = pre;
+			pre = cur;
+			cur = next;
+		}
+		cur.next = pre;
 	}
 }

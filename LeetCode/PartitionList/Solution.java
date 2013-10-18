@@ -14,30 +14,59 @@ package PartitionList;
 
 import Helper.ListNode;
 
-// TLE!!!! what the ****!!!
 public class Solution {
-	public static void main(String[] args) {
-		Solution s = new Solution();
-		ListNode n1 = new ListNode(2);
-		ListNode n2 = new ListNode(1);
-		n2.next = n1;
-		System.out.println(s.partition(n2, 2).val);
-	}
-	
+	// AC on 1st try :) 0.0 But I may need to rewrite it
 	public ListNode partition(ListNode head, int x) {
-		if(head == null) return null;
-		ListNode big = null, cur = head, bigStart = null;
-		while(true) {
-			if(cur.val >= x) {
-				if(bigStart == null) bigStart = cur;
-				if(big != null) big.next = cur;
-				big = cur;
-				if(cur == head) head = head.next;
-			}
-			if(cur.next == null) break;
+		ListNode cur = head, pre = null;
+		
+		while(cur != null && cur.val < x) {
+			pre = cur;
 			cur = cur.next;
 		}
-		if(bigStart != null && cur != null) cur.next = bigStart;
-		return head;
+		if(cur == null) return head;
+		
+		while(true) {
+			ListNode preSmall = pre, preBig = null, temp;
+			pre = null;
+			while(cur != null && cur.val >= x) {
+				pre = cur;
+				cur = cur.next;
+			}
+			if(cur == null) return head;
+			preBig = pre;
+			pre = null;
+			while(cur != null && cur.val < x) {
+				pre = cur;
+				cur = cur.next;
+			}
+			temp = preBig.next;
+			if(preSmall == null) {
+				preBig.next = cur;
+				pre.next = head;
+				head = temp;
+			} else {
+				preBig.next = cur;
+				pre.next = preSmall.next;
+				preSmall.next = temp;
+			}
+		}
 	}
+	
+	// TLE!!!! what the ****!!!
+//	public ListNode partition(ListNode head, int x) {
+//		if(head == null) return null;
+//		ListNode big = null, cur = head, bigStart = null;
+//		while(true) {
+//			if(cur.val >= x) {
+//				if(bigStart == null) bigStart = cur;
+//				if(big != null) big.next = cur;
+//				big = cur;
+//				if(cur == head) head = head.next;
+//			}
+//			if(cur.next == null) break;
+//			cur = cur.next;
+//		}
+//		if(bigStart != null && cur != null) cur.next = bigStart;
+//		return head;
+//	}
 }

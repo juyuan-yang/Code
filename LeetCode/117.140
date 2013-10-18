@@ -108,11 +108,12 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 113. Next Permutation						N						N?						4 (other solutions?)
 114. Rotate List							N						N?						3 (beautiful codes?)
 115. Text Justification						N						N?						4 (beautiful ways?)
+116. Partition List							N						N?						5 (beautiful codes!)
+117. Reverse Nodes in k-Group				N						N?						3 (clean codes?)
 
 DONE:
 
 Problem in schedule----:
-Partition List
 Minimum Window Substring
 Valid Number
 
@@ -121,4 +122,3 @@ Next Permutation
 Substring with Concatenation of All Words
 Divide Two Integers
 Implement strStr
-Reverse Nodes in k-Group
