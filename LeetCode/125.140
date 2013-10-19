@@ -116,6 +116,8 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 121. 3 Sum									N						N						1
 122. 3 Sum Closest							N						N						1
 123. 4 Sum									N						N						3 (not using 3 sum?)
+124. 2 Sum									N						N						1
+125. ZigZag Conversion						N						N						1
 
 DONE:
 
