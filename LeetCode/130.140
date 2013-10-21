@@ -122,10 +122,12 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 127. Divide Two Integers					N						Y?						5 (clean code?)
 128. Longest Palindromic Substring			N						N?						3 (clean code?)
 129. Longest Substring Without Repeating Characters		N			N?						1
+130. Palindrome Number						N						N?						2
 
 DONE:
 
 Problem in schedule----:
+
 Minimum Window Substring
 Valid Number
 
@@ -134,7 +136,6 @@ Substring with Concatenation of All Words
 Implement strStr
 Container With Most Water
 Regular Expression Matching
-Palindrome Number
 Reverse Integer
 String to Integer
 Median of Two Sorted Arrays

@@ -17,8 +17,24 @@ There is a more generic way of solving this problem.
 
 package PalindromeNumber;
 
+// AC on 2nd try :(
 public class Solution {
 	public boolean isPalindrome(int x) {
-		return false;
+        if(x < 0) return false; // bug...
+        
+        int exp = 1, bits = 1, low = 1;
+        
+        while(x / 10 >= exp) {
+            exp = exp * 10;
+            bits++;
+        }
+        
+        while(bits > 1) {
+            if((x / exp) % 10 != (x / low) % 10) return false; // bug, don't forget % 10
+            exp /= 10;
+            low *= 10;
+            bits -= 2;
+        }
+        return true;
 	}
 }
