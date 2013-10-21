@@ -118,6 +118,9 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 123. 4 Sum									N						N						3 (not using 3 sum?)
 124. 2 Sum									N						N						1
 125. ZigZag Conversion						N						N						1
+126. Longest Common Prefix					N						N？						2
+127. Divide Two Integers					N						Y?						5 (clean code?)
+
 
 DONE:
 
@@ -128,5 +131,4 @@ Valid Number
 Word Break 2
 Next Permutation
 Substring with Concatenation of All Words
-Divide Two Integers
 Implement strStr
