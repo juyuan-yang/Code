@@ -22,6 +22,17 @@ have to re-design the function (ie, add an extra parameter).
 
 package ReverseInteger;
 
+// AC on 2nd try, it's because -3 % 10 = -3...
 public class Solution {
-
+	public int reverse(int x) {
+		int res = 0;
+		
+		while(x != 0) {
+			int temp = x % 10;
+			x = x / 10;
+			res = res * 10 + temp;
+		}
+		
+		return res;
+	}
 }

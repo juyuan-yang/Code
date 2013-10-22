@@ -125,6 +125,8 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 130. Palindrome Number						N						N?						2
 131. Minimum Window Substring				N						Y?						5 (efficient, but ugly now)
 132. Valid Number							N						Y?						5
+133. Reverse Integer						N						N						5 (negative mod?)
+134. Regular Expression Matching			N						N?						5 (easy to make mistakes)
 
 DONE:
 
@@ -134,7 +136,5 @@ Word Break 2
 Substring with Concatenation of All Words
 Implement strStr
 Container With Most Water
-Regular Expression Matching
-Reverse Integer
 String to Integer
 Median of Two Sorted Arrays
