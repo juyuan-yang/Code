@@ -123,13 +123,12 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 128. Longest Palindromic Substring			N						N?						3 (clean code?)
 129. Longest Substring Without Repeating Characters		N			N?						1
 130. Palindrome Number						N						N?						2
+131. Minimum Window Substring				N						Y?						5 (efficient, but ugly now)
+132. Valid Number							N						Y?						5
 
 DONE:
 
 Problem in schedule----:
-
-Minimum Window Substring
-Valid Number
 
 Word Break 2
 Substring with Concatenation of All Words
