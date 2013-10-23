@@ -128,6 +128,8 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 133. Reverse Integer						N						N						5 (negative mod?)
 134. Regular Expression Matching			N						N?						5 (easy to make mistakes)
 135. String to Integer (atoi)				N						N?						4 (easy to make mistakes)
+136. Median of Two Sorted Arrays			N						N?						4 (easy to make mistakes)
+137. Substring with Concatenation of All Words 		N				N?						3 (more efficient?)
 
 DONE:
 
@@ -137,4 +139,3 @@ Word Break 2
 Substring with Concatenation of All Words
 Implement strStr
 Container With Most Water
-Median of Two Sorted Arrays
