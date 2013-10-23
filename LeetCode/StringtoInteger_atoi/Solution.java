@@ -29,8 +29,37 @@ out of the range of representable values, INT_MAX (2147483647) or INT_MIN (-2147
 
 package StringtoInteger_atoi;
 
+// AC on 3rd try, but it is because of typo =.=... For edge cases, I follow the instruction from this problem,
+// but I should define it myself at the beginning of the interview
 public class Solution {
 	public int atoi(String str) {
-		return 0;
+		if(str == null) return 0;
+		str = str.trim();
+		if(str.length() == 0) return 0;
+		
+		boolean neg = false;
+		if(str.charAt(0) == '-') {
+			neg = true;
+			str = str.substring(1);
+		} else if(str.charAt(0) == '+') {
+			str = str.substring(1);
+		}
+		
+		int res = 0, pos = 0;
+		while(pos < str.length()) {
+			char ch = str.charAt(pos);
+			if(ch >= '0' && ch <= '9') {
+				int temp = ch - '0';
+				if(neg) {
+					if(res < (Integer.MIN_VALUE + temp) / 10) return Integer.MIN_VALUE;
+					res = res * 10 - temp;
+				} else {
+					if(res > (Integer.MAX_VALUE - temp) / 10) return Integer.MAX_VALUE;
+					res = res * 10 + temp;
+				}
+			} else break;
+			pos++;
+		}
+		return res;
 	}
 }

@@ -127,6 +127,7 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 132. Valid Number							N						Y?						5
 133. Reverse Integer						N						N						5 (negative mod?)
 134. Regular Expression Matching			N						N?						5 (easy to make mistakes)
+135. String to Integer (atoi)				N						N?						4 (easy to make mistakes)
 
 DONE:
 
@@ -136,5 +137,4 @@ Word Break 2
 Substring with Concatenation of All Words
 Implement strStr
 Container With Most Water
-String to Integer
 Median of Two Sorted Arrays
