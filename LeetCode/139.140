@@ -130,12 +130,11 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 135. String to Integer (atoi)				N						N?						4 (easy to make mistakes)
 136. Median of Two Sorted Arrays			N						N?						4 (easy to make mistakes)
 137. Substring with Concatenation of All Words 		N				N?						3 (more efficient?)
+138. Implement strStr						N						N?						4 (KMP?)
+139. Container With Most Water				N						N						2 (prove?)
 
 DONE:
 
 Problem in schedule----:
 
 Word Break 2
-Substring with Concatenation of All Words
-Implement strStr
-Container With Most Water

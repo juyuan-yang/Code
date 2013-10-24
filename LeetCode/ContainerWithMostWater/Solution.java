@@ -10,9 +10,23 @@ Note: You may not slant the container.
 
 package ContainerWithMostWater;
 
+// AC on 1st try
 public class Solution {
 	public int maxArea(int[] height) {
-		
-		return 0;
+        if(height == null || height.length < 2) return 0;
+        int max = 0, start = 0, end = height.length - 1;
+        
+        while(start < end) {
+            int temp;
+            if(height[start] < height[end]) {
+                temp = (end - start) * height[start];
+                start++;
+            } else {
+                temp = (end - start) * height[end];
+                end--;
+            }
+            if(temp > max) max = temp;
+        }
+        return max;
 	}
 }
