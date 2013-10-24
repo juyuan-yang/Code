@@ -132,9 +132,4 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 137. Substring with Concatenation of All Words 		N				N?						3 (more efficient?)
 138. Implement strStr						N						N?						4 (KMP?)
 139. Container With Most Water				N						N						2 (prove?)
-
-DONE:
-
-Problem in schedule----:
-
-Word Break 2
+140. Word Break II							N						Y?						4 (better code?)
