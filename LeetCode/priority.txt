@@ -1,0 +1,131 @@
+4. Surrounded Regions                                  Y    Y    5
+71. Word Ladder2                                       N?   N?   5
+77. Distinct Subsequences                              N?   Y?   5 
+116. Partition List                                    N    N?   5 (beautiful codes!)
+127. Divide Two Integers                               N    Y?   5 (clean code?)
+131. Minimum Window Substring                          N    Y?   5 (efficient, but ugly now)
+132. Valid Number                                      N    Y?   5
+133. Reverse Integer                                   N    N    5 (negative mod?)
+134. Regular Expression Matching                       N    N?   5 (easy to make mistakes)
+13. Word Ladder 1                                      N?   Y    4
+22. Longest Consecutive Sequence                       Y    Y?   4
+33. Restore IP Addresses                               N?   Y    4
+48. Clone Graph                                        Y?   Y?   4
+52. Set Matrix Zeroes                                  Y?   Y?   4
+55. Gas Station                                        N?   Y?   4
+64. Permutation Sequence                               N?   Y?   4
+70. Edit Distance                                      N?   N?   4 (more efficient? / delete?)
+72. Scramble String                                    N?   Y?   4 (other solution?)
+74. Single Number 2                                    N?   Y?   4 (how other people take care of negatives?)
+76. Word Break                                         N?   Y?   4 (other ways?)
+78. Search in Rotated Sorted Array 2                   N?   Y?   4
+93. Wildcard Matching                                  N?   N?   4
+94. Spiral Matrix 2                                    N?   N?   4 (other ways)
+95. Spiral Matrix                                      N?   N?   4 (same as 2)
+113. Next Permutation                                  N    N?   4 (other solutions?)
+115. Text Justification                                N    N?   4 (beautiful ways?)
+135. String to Integer (atoi)                          N    N?   4 (easy to make mistakes)
+136. Median of Two Sorted Arrays                       N    N?   4 (easy to make mistakes)
+138. Implement strStr                                  N    N?   4 (KMP?)
+140. Word Break II                                     N    Y?   4 (better code?)
+1. Palindrome Partition 1&2                            Y    Y    3
+8. Valid Palindrome                                    N    Y    3
+9. Binary Tree Max Path Sum                            N?   Y    3
+17. Binary Tree Level Order Traversal 2                N?   Y?   3
+18. Balanced Binary Tree                               Y?   N?   3 (TLE?)
+19. Populating Next Right Pointers in Each Node 1&2    N?   Y?   3
+26. Binary Tree Zigzag Level Order Traversal           Y?   Y    3
+31. Convert Sorted List to Binary Search Tree          N?   Y?   3
+37. Binary Tree Inorder Traversal                      N    N?   3
+39. Subsets 2                                          N?   N?   3
+41. Remove Duplicates from Sorted List 2               N?   Y?   3 (Need to re-do at the beginning of 3rd round)
+47. Search in Rotated Sorted Array                     N    N?   3
+51. Simplify Path                                      N?   N?   3
+54. Interleaving String                                N?   N?   3 (Other algorithm?)
+61. Merge Two Sorted Lists                             N?   N?   3
+62. Recover Binary Search Tree                         N?   N?   3 (other ways?)
+67. Merge Intervals                                    N    N?   3 (without sort?)
+69. Candy                                              N?   N?   3
+75. Copy List with Random Pointer                      N?   N?   3 (don't use map?)
+79. Sort Colors                                        N?   N?   3
+80. Maximum Subarray                                   N?   N?   3 (Divide and conquer?)
+81. pow(x, n)                                          N?   N?   3 (non-recursive?)
+87. Combination Sum 1&2                                N?   N?   3
+91. Maximal Rectangle                                  N?   N?   3
+100. Permutations II                                   N?   N?   3 (about iterating map)
+114. Rotate List                                       N    N?   3 (beautiful codes?)
+117. Reverse Nodes in k-Group                          N    N?   3 (clean codes?)
+123. 4 Sum                                             N    N    3 (not using 3 sum?)
+128. Longest Palindromic Substring                     N    N?   3 (clean code?)
+137. Substring with Concatenation of All Words         N    N?   3 (more efficient?)
+14. Flatten Binary Tree to Linked List                 N?   Y    2
+15. Path Sum 1&2                                       N?   N?   2
+21. Minimum Depth of Binary Tree                       N?   N?   2
+23. Convert Sorted Array to Binary Search Tree         N?   N?   2
+24. Maximum Depth of Binary Tree                       N?   N?   2
+28. Binary Tree Level Order Traversal                  N?   N?   2
+29. Construct Bi-Tree from In&Post order Traversal     N?   N?   2 (Not recursive, but BFS?)
+30. Construct Bi-Tree from Pre&In order Traversal      N?   N?   2 (Not recursive, but BFS?)
+32. Validate Binary Search Tree                        N?   N?   2
+35. Decode Ways                                        N?   N?   2
+38. Unique Binary Search Trees 1                       N    N?   2
+42. Reverse Linked List 2                              N?   N?   2
+43. Unique Binary Search Trees 2                       N    N?   2
+49. Word Search                                        N?   N?   2
+50. Plus One                                           N    N?   2
+53. Search a 2D Matrix                                 N?   N?   2
+56. Unique Paths 1&2                                   N?   N?   2 (Catalan number? Constant space?)
+60. Minimum Path Sum                                   N    N?   2 (Less space?)
+63. Sqrt(x)                                            N?   N?   2
+65. Length of Last Word                                N    N?   2
+66. Insert Interval                                    N    N?   2
+73. Single Number                                      N?   N?   2
+83. Permutations                                       N    N    2
+84. Jump Game 2                                        N    N?   2
+85. N-Queens 1&2                                       N    N    2
+89. Count and Say                                      N    N?   2
+90. Largest Rectangle in Histogram                     N    N?   2
+92. First Missing Positive                             N?   N?   2
+96. Anagrams                                           N?   N?   2
+97. Multiply Strings                                   N    N?   2
+98. Valid Sudoku                                       N    N?   2 (better writing?)
+99. Trapping Rain Water                                N?   N?   2
+102. Search for a Range                                N    N?   2 (better writing?)
+106. Longest Valid Parentheses                         N?   N?   2
+107. Generate Parentheses                              N    N?   2
+108. Valid Parentheses                                 N?   N?   2
+111. Integer to Roman                                  N    N?   2
+112. Roman to Integer                                  N    N?   2
+118. Swap Nodes in Pairs                               N    N?   2
+119. Merge k Sorted Lists                              N    N?   2
+126. Longest Common Prefix                             N    N?   2
+130. Palindrome Number                                 N    N?   2
+139. Container With Most Water                         N    N    2 (prove?)
+3. Sum Root to Leaf Numbers                            Y    Y    1
+5. Best Time to Buy and Sell Stock 1&2&3               N    Y    1
+10. Triangle                                           N    Y    1
+11. PascalsTriangle 1&2                                N    Y?   1
+25. Same Tree                                          N?   N?   1
+27. Symmetric Tree                                     N?   N?   1
+34. Gray Code                                          N    N?   1
+36. Merge Sorted Array                                 N    N?   1
+40. Remove Duplicates from Sorted List                 N    N?   1
+44. Remove Duplicates from Sorted Array 2              N    N    1
+45. Subsets                                            N    N    1(Recursive?)
+46. Combinations                                       N    N    1 (Recursive?)
+58. Add Binary                                         N    N?   1
+59. Climbing Stairs                                    N    N?   1 
+68. Jump Game                                          N    N    1
+82. Rotate Image                                       N    N    1
+101. Sudoku Solver                                     N    N?   1
+103. Search Insert Position                            N    N?   1
+109. Add Two Numbers                                   N    N?   1
+110. Letter Combinations of a Phone Number             N    N?   1
+120. Remove Nth Node From End of List                  N    N?   1
+121. 3 Sum                                             N    N    1
+122. 3 Sum Closest                                     N    N    1
+124. 2 Sum                                             N    N    1
+125. ZigZag Conversion                                 N    N    1
+129. Longest Substring Without Repeating Characters    N    N?   1
+104. Remove Duplicates from Sorted Array               N    N    0
+105. Remove Element                                    N    N    0
