@@ -34,4 +34,25 @@ public class Solution {
 		}
 		return node;
 	}
+	
+	// A little simplified version
+//    public TreeNode sortedListToBST(ListNode head) {
+//        int len = 0;
+//        for(ListNode tmp = head; tmp != null; tmp = tmp.next, len++);
+//        return traverse(head, 0, len - 1);
+//    }
+//    
+//    public TreeNode traverse(ListNode head, int start, int end) {
+//        if(start > end) return null;
+//        int mid = (end - start) / 2 + start;
+//        TreeNode left = traverse(head, start, mid - 1);
+//        TreeNode node = new TreeNode(head.val);
+//        node.left = left;
+//        if(head.next != null) {
+//            head.val = head.next.val;
+//            head.next = head.next.next;
+//            node.right = traverse(head, mid + 1, end);
+//        }
+//        return node;
+//    }
 }
