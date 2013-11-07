@@ -40,3 +40,7 @@ Date & Solved Problems
 10.21	134
 10.22	137
 10.23	140
+
+new problems:
+11.3	143
+11.6	144 
