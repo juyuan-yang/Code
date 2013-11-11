@@ -136,3 +136,5 @@ Problem								Efficient algorithm		Elegant ways for code		Priority 1-5
 141. Linked List Cycle 1&2					N						N?						2
 143. Reorder List							N?						N?						4 (better code?)
 144. Binary Tree Preorder Traversal			N						N						1
+145. Binary Tree Postorder Traversal		N?						Y?						4 (without stack?)
+146. LRU Cache								Y?						N?						4 (better code)
