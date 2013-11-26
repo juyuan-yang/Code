@@ -24,29 +24,59 @@ confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on
 package BinaryTreeLevelOrderTraversal2;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+
 import Helper.TreeNode;
 
-// AC on 3rd try :(
-// Made a silly mistake, need to pay attention the order of putting ArrayList into final result
 public class Solution {
-	public ArrayList<ArrayList<Integer>> levelOrderBottom(TreeNode root) {
-		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
-		Map<Integer, ArrayList<Integer>> map = new HashMap<Integer, ArrayList<Integer>>();
-		visit(root, 0, map);
-		for(int i = 0; i < map.size(); i++) {
-			res.add(map.get(map.size() - 1 - i));
-		}
-		return res;
-	}
+	// Iterative version
+    public ArrayList<ArrayList<Integer>> levelOrderBottom(TreeNode root) {
+        ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+        if(root == null) return res;
+        
+        ArrayList<TreeNode> nodes = new ArrayList<TreeNode>();
+        nodes.add(root);
+        
+        while(!nodes.isEmpty()) {
+            ArrayList<Integer> list = new ArrayList<Integer>();
+            for(TreeNode node : nodes) {
+                list.add(node.val);
+            }
+            res.add(list);
+            
+            ArrayList<TreeNode> newNodes = new ArrayList<TreeNode>();
+            for(TreeNode node : nodes) {
+                if(node.left != null) newNodes.add(node.left);
+                if(node.right != null) newNodes.add(node.right);
+            }
+            
+            nodes = newNodes;
+        }
+        
+        Collections.reverse(res);
+        return res;
+    }
 	
-	public void visit(TreeNode node, int height, Map<Integer, ArrayList<Integer>> map) {
-		if(node == null) return;
-		visit(node.left, height+1, map);
-		visit(node.right, height+1, map);
-		ArrayList<Integer> list = map.containsKey(height) ? (map.get(height)) : new ArrayList<Integer>();
-		list.add(node.val);
-		map.put(height, list);
-	}
+ // AC on 3rd try :(
+ // Made a silly mistake, need to pay attention the order of putting ArrayList into final result
+//	public ArrayList<ArrayList<Integer>> levelOrderBottom(TreeNode root) {
+//		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+//		Map<Integer, ArrayList<Integer>> map = new HashMap<Integer, ArrayList<Integer>>();
+//		visit(root, 0, map);
+//		for(int i = 0; i < map.size(); i++) {
+//			res.add(map.get(map.size() - 1 - i));
+//		}
+//		return res;
+//	}
+//	
+//	public void visit(TreeNode node, int height, Map<Integer, ArrayList<Integer>> map) {
+//		if(node == null) return;
+//		visit(node.left, height+1, map);
+//		visit(node.right, height+1, map);
+//		ArrayList<Integer> list = map.containsKey(height) ? (map.get(height)) : new ArrayList<Integer>();
+//		list.add(node.val);
+//		map.put(height, list);
+//	}
 }
